@@ -1,11 +1,11 @@
 var args = process.argv;
 var rootPath = args[2];
 if (!rootPath) {
-    console.log('Add a parameter as the root path.\nEg.\n        node CleanUpSvn.js D:/TestDirectory');
+    console.log('Add a parameter as the root path.\nEg.\n\tnode CleanUpSvn.js D:/TestDirectory');
     return;
 }
 
-var rmFolderName = ".svn";
+var rmFolderName = args[3] || ".svn";
 
 var fs = require('fs');
 var os = require("os");
