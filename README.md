@@ -5,5 +5,5 @@
 Pass a directory path to the program, it will delete the ".svn" folder recursively.
 eg.
 ```bash
-node CleanUpSvn.js D:/TestDirectory
+node clean-up-svn.js D:/TestDirectory
 ```
